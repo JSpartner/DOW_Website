@@ -145,7 +145,10 @@ function preloadCompleteHandle () {
     TweenLite.to($('#preload #bar'), .3, { alpha: 0, delay: .5 });
     if ($.browser.mobile)
     {
+// delete this function call when code snippet below is needed for mobile devices
         enterSite();
+
+// uncomment for showing the label 'Enter Site' for mobile devices on home page
         /*$('#enterLabel').fadeIn(400);
          $('body').click(enterSite).css('cursor', 'pointer');*/
     }
